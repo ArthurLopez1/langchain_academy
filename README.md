@@ -90,8 +90,24 @@ Graphs for LangGraph Studio are in the `module-x/studio/` folders.
 * Run this from the command line to create these files for module 1 to 4, as an example:
 ```
 $ for i in {1..4}; do
-  cp module-$i/studio/.env.example module-$i/studio/.env
-  echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-$i/studio/.env
-done
-$ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
+  cp module-1/studio/.env.example module-1/studio/.env
+  echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-1/studio/.env
+```
+
+```
+$ for i in {1..4}; do
+  cp module-2/studio/.env.example module-2/studio/.env
+  echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-2/studio/.env
+```
+
+```
+$ for i in {1..4}; do
+  cp module-3/studio/.env.example module-3/studio/.env
+  echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-3/studio/.env
+```
+
+```
+$ for i in {1..4}; do
+  cp module-4/studio/.env.example module-4/studio/.env
+  echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-4/studio/.env
 ```
