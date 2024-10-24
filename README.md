@@ -111,3 +111,7 @@ $ for i in {1..4}; do
   cp module-4/studio/.env.example module-4/studio/.env
   echo "OPENAI_API_KEY=\"$OPENAI_API_KEY\"" > module-4/studio/.env
 ```
+
+```
+base_url="http://host.docker.internal:11434"
+```
